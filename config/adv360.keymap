@@ -12,6 +12,13 @@
     layers = <0>; \
   };
 
+
+  &lt {
+                        tapping-term-ms = <220>;
+                        quick-tap-ms = <190>;
+                        global-quick-tap;
+  };
+
 / {
     behaviors {
       #include "macros.dtsi"
@@ -20,8 +27,9 @@
           compatible = "zmk,behavior-hold-tap";
           label = "HOMEROW_MODS";
           #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          quick_tap_ms = <175>;
+          tapping-term-ms = <250>;
+          quick-tap-ms = <190>;
+          global-quick-tap;
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
@@ -29,8 +37,8 @@
 combos {
                 compatible = "zmk,combos";
 
-                 COMBO(esckey, &kp ESC, 33 32)
-                 COMBO(tabkey, &kp TAB, 33 31)
+                 COMBO(esckey, &kp ESC, 32 31)
+                 COMBO(tabkey, &kp TAB, 32 30)
 };
 
   keymap {
