@@ -31,7 +31,7 @@ combos {
 
                  COMBO(esckey, &kp ESC, 33 32)
                  COMBO(tabkey, &kp TAB, 33 31)
-}
+};
 
   keymap {
     compatible = "zmk,keymap";
