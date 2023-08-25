@@ -12,12 +12,6 @@
     layers = <0>; \
   };
 
-
-  &lt {
-            tapping-term-ms = <210>;
-            quick-tap-ms = <140>;
-  };
-
 / {
     behaviors {
       #include "macros.dtsi"
@@ -26,10 +20,21 @@
           compatible = "zmk,behavior-hold-tap";
           label = "HOMEROW_MODS";
           #binding-cells = <2>;
-          tapping-term-ms = <210>;
-          quick-tap-ms = <140>;
-          flavor = "tap-preferred";
+          tapping-term-ms = <180>;
+          quick-tap-ms = <80>;
+          global-quick-tap;
+          flavor = "balanced";
           bindings = <&kp>, <&kp>;
+      };
+      lb: balanced_layer {
+          compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_MODS";
+          #binding-cells = <2>;
+          tapping-term-ms = <180>;
+          quick-tap-ms = <80>;
+          global-quick-tap;
+          flavor = "balanced";
+          bindings = <&to>, <&kp>;
       };
     };
 combos {
@@ -48,7 +53,7 @@ combos {
         &kp TAB   &kp Q       &kp W       &kp E        &kp R        &kp T  &kp INS                                                        &kp TILDE &kp Y  &kp U        &kp I         &kp O        &kp P         &kp BSLH
         &kp ESC   &hm LGUI A  &hm RALT S  &hm LSHFT D  &hm LCTRL F  &kp G  &kp TAB    &kp LCTRL &kp LALT    &kp RGUI  &kp RCTRL           &kp GRAVE &kp H  &hm RCTRL J  &hm RSHFT K   &hm LALT L   &hm RGUI SEMI &kp SQT
         &kp LSHFT &kp Z       &kp X       &kp C        &kp V        &kp B                       &kp HOME    &kp PG_UP                               &kp N  &kp M        &kp COMMA     &kp DOT      &kp FSLH      &kp RSHFT
-        &mo 2     &kp GRAVE   &kp CAPS    &kp LEFT     &kp RIGHT           &lt 2 BSPC &lt 4 DEL &kp END     &kp PG_DN &kp ENTER &lt 2 SPACE            &kp UP       &kp DOWN      &kp LBKT     &kp RBKT      &mo 2
+        &mo 2     &kp GRAVE   &kp CAPS    &kp LEFT     &kp RIGHT           &lb 2 BSPC &lb 4 DEL &kp END     &kp PG_DN &kp ENTER &lb 2 SPACE                &kp UP       &kp DOWN      &kp LBKT     &kp RBKT      &mo 2
       >;
     };
     keypad {
