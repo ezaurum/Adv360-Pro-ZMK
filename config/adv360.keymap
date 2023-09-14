@@ -29,8 +29,8 @@
 combos {
                 compatible = "zmk,combos";
 
-                 COMBO(esckey, &kp ESC, 33 32)
-                 COMBO(tabkey, &kp TAB, 33 31)
+                 COMBO(esckey, &kp ESC, 32 31 30)
+                 COMBO(tabkey2, &kp TAB, 32 17 30)
 };
 
   keymap {
