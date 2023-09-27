@@ -51,7 +51,7 @@ combos {
 
                  COMBO(tabkey2, &kp TAB, 32 17 30)
     COMBO(sh0, &kp LSHFT, 31 32 )
- COMBO(sh1, &kp RSHFT, 37 38 )
+ COMBO(sh1, &kp RSHFT, 41 42 )
 
 };
 
