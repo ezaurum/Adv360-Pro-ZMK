@@ -12,6 +12,8 @@
 #define NAV 5
 #define MOD 6
 
+#define AS(keycode) &as LS(keycode) keycode
+
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     timeout-ms = <90>; \
@@ -70,11 +72,11 @@ combos {
 
     homerow_layer {
       bindings = <
-        &hm F1 EQUAL   &hm F2 N1    &hm F3 N2     &hm F4  N3   &hm F5 N4     &hm F6 N5 &kp ESC                                                                  AS(UNDER)              &hm F7 N6    &hm F8 N7  &hm F9 N8     &hm F10 N9   &hm F11 N0    &hm F12 MINUS
-        &kp  TAB       AS(Q)     AS(W)      AS(E)    AS(R)      AS(T)  &kp INS                                                                  &kp TILDE               AS(Y)     AS(U)  AS(I)      AS(O)   AS(P)    AS(BSLH)
+        &hm F1 EQUAL   &hm F2 N1    &hm F3 N2     &hm F4  N3   &hm F5 N4     &hm F6 N5 &kp ESC                                                               AS(UNDER)    &hm F7 N6    &hm F8 N7  &hm F9 N8     &hm F10 N9   &hm F11 N0    &hm F12 MINUS
+        &kp  TAB       AS(Q)     AS(W)      AS(E)    AS(R)      AS(T)  &kp INS                                                                  &kp TILDE     AS(Y)     AS(U)  AS(I)      AS(O)   AS(P)    AS(BSLH)
         &kp  ESC       &hm LGUI A  &hm RALT S  &hm LSHFT D  &hm LCTRL F    AS(G)  AS(GRAVE)             &kp LCTRL    &mo MOD     &kp LGUI    &kp RCTRL     &kp DQT                 AS(H)     &hm RCTRL J   &hm RSHFT K   &hm LALT L   &hm RGUI SEMI  AS(SQT)
         &mo  FUNCTION  AS(Z)     AS(X)      AS(C)    AS(V)      AS(B)                                     &kp HOME    &kp PG_UP                                         AS(N)    AS(M)   AS(COMMA)  AS(DOT)  AS(FSLH)  &mo FUNCTION
-        &kp  LSHFT    AS(GRAVE)  &tog DEFAULT  &kp LEFT &kp RIGHT         &kp BSPC &lb NAV DEL  &kp END     &kp PG_DN   &lb NAV ENTER &kp SPACE           &kp UP  &kp DOWN   AS(LBKT) AS(RBKT)  &kp RSHFT 
+        &sk  LSHFT    AS(GRAVE)  &tog DEFAULT  &kp LEFT &kp RIGHT         &kp BSPC &lb NAV DEL  &kp END     &kp PG_DN   &lb NAV ENTER &kp SPACE           &kp UP  &kp DOWN   AS(LBKT) AS(RBKT)  &sk RSHFT 
       >;
     };
 
