@@ -14,15 +14,6 @@
 #define NAV 5
 #define MOD 6
 
-#define &kp keycode &as LS(keycode) keycode
-
-#define COMBO(NAME, BINDINGS, KEYPOS) \
-  combo_##NAME { \
-    timeout-ms = <90>; \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-  };
-
 / {
     behaviors {
         #include "macros.dtsi"
