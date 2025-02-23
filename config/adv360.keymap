@@ -55,6 +55,21 @@
 
         COMBO(esckey, &kp ESC, 32 31 30)
                  COMBO(tabkey2, &kp TAB, 32 17 30)
+
+        shift2 {
+            bindings = <&kp RSHFT>;
+            key-positions = <42 43 41>;
+        };
+
+        esc2 {
+            bindings = <&kp ESCAPE>;
+            key-positions = <30 31 32>;
+        };
+
+        tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <32 30 17>;
+        };
     };
 
     keymap {
@@ -62,22 +77,22 @@
 
         homerow_layer {
             bindings = <
-&hm F1 EQUAL  &hm F2 N1   &hm F3 N2     &hm F4 N3    &hm F5 N4    &hm F6 N5  &kp ESC                                                        &kp UNDER        &hm F7 N6  &hm F8 N7    &hm F9 N8    &hm F10 N9  &hm F11 N0     &hm F12 MINUS
-&kp TAB       &kp Q       &kp W         &kp E        &kp R        &kp T      &kp INS                                                        &hm GRAVE RSHFT  &kp Y      &kp U        &kp I        &kp O       &kp P          &kp BSLH
-&kp ESC       &hm LGUI A  &hm RALT S    &hm LSHFT D  &hm LCTRL F  &kp G      &kp GRAVE  &kp LCTRL   &mo MOD       &kp LGUI   &kp RCTRL      &kp DQT          &kp H      &hm RCTRL J  &hm RSHFT K  &hm LALT L  &hm RGUI SEMI  &kp SQT
-&mo FUNCTION  &kp Z       &kp X         &kp C        &kp V        &kp B                             &kp HOME      &kp PG_UP                                  &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH       &mo FUNCTION
-&kp LSHFT     &kp GRAVE   &tog DEFAULT  &kp LEFT     &kp RIGHT               &kp BSPC   &kp DELETE  &kp END       &kp PG_DN  &lb NAV ENTER  &kp SPACE                   &kp UP       &kp DOWN     &kp LBKT    &kp RBKT       &sk RSHFT
+&hm F1 EQUAL  &hm F2 N1   &hm F3 N2   &hm F4 N3    &hm F5 N4    &hm F6 N5  &kp CAPSLOCK                                                    &kp UNDER        &hm F7 N6  &hm F8 N7    &hm F9 N8    &hm F10 N9  &hm F11 N0     &hm F12 MINUS
+&kp TAB       &kp Q       &kp W       &kp E        &kp R        &kp T      &kp INS                                                         &hm GRAVE RSHFT  &kp Y      &kp U        &kp I        &kp O       &kp P          &kp BSLH
+&kp ESC       &hm LGUI A  &hm RALT S  &hm LSHFT D  &hm LCTRL F  &kp G      &kp GRAVE     &kp LCTRL   &mo 6         &kp LGUI   &kp RCTRL    &kp DQT          &kp H      &hm RCTRL J  &hm RSHFT K  &hm LALT L  &hm RGUI SEMI  &kp SQT
+&mo 4         &kp Z       &kp X       &kp C        &kp V        &kp B                                &kp HOME      &kp PG_UP                                &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH       &mo 4
+&kp LSHFT     &kp GRAVE   &lb 1 SEMI  &kp LEFT     &kp RIGHT               &kp BSPC      &kp DELETE  &kp END       &kp PG_DN  &lb 5 ENTER  &kp SPACE                   &kp UP       &kp DOWN     &kp LBKT    &kp RBKT       &sk RSHFT
             >;
         };
 
         default_layer {
             display-name = "Base";
             bindings = <
-&tog HOMEROW  &kp N1     &kp N2  &kp N3    &kp N4     &kp N5  &kp ESC                                                                     &kp UNDER                &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB       &kp Q      &kp W   &kp E     &kp R      &kp T   &kp INS                                                                     &kp TILDE                &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp EQUAL     &kp A      &kp S   &kp D     &kp F      &kp G   &kp GRAVE              &kp LCTRL    &mo MOD       &kp LGUI   &kp RCTRL      &kp DQT                  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&mo FUNCTION  &kp Z      &kp X   &kp C     &kp V      &kp B                                       &kp HOME      &kp PG_UP                                          &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &mo FUNCTION
-&kp LSHFT     &kp GRAVE  &trans  &kp LEFT  &kp RIGHT          &lb HOMEROW_LEFT BSPC  &lb NAV DEL  &kp END       &kp PG_DN  &lb NAV ENTER  &lb HOMEROW_RIGHT SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp RSHFT
+&tog 0     &kp N1     &kp N2  &kp N3    &kp N4     &kp N5  &kp ESC                                                      &kp UNDER    &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W   &kp E     &kp R      &kp T   &kp INS                                                      &kp TILDE    &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp EQUAL  &kp A      &kp S   &kp D     &kp F      &kp G   &kp GRAVE   &kp LCTRL  &mo 6         &kp LGUI   &kp RCTRL    &kp DQT      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&mo 4      &kp Z      &kp X   &kp C     &kp V      &kp B                          &kp HOME      &kp PG_UP                            &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &mo 4
+&kp LSHFT  &kp GRAVE  &trans  &kp LEFT  &kp RIGHT          &lb 2 BSPC  &lb 5 DEL  &kp END       &kp PG_DN  &lb 5 ENTER  &lb 3 SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp RSHFT
             >;
         };
 
@@ -127,30 +142,10 @@
             bindings = <
 &none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans           &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none         &none         &bootloader                                            &bootloader      &none  &none       &none       &none  &none  &none
-&studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
+&studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &none            &none  &none       &none       &none  &none  &none
+&none           &none         &none         &none         &none         &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
-        };
-
-        extra1 {
-            display-name = "Red";
-            status = "reserved";
-        };
-
-        extra2 {
-            display-name = "Purple";
-            status = "reserved";
-        };
-
-        extra3 {
-            display-name = "Cyan";
-            status = "reserved";
-        };
-
-        extra4 {
-            display-name = "Yellow";
-            status = "reserved";
         };
     };
 };
