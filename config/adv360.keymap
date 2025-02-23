@@ -54,9 +54,6 @@
     combos {
         compatible = "zmk,combos";
 
-        COMBO(esckey, &kp ESC, 32 31 30)
-                 COMBO(tabkey2, &kp TAB, 32 17 30)
-
         shift2 {
             bindings = <&kp RSHFT>;
             key-positions = <42 43 41>;
