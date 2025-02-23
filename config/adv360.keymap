@@ -68,40 +68,20 @@
             bindings = <
 &hm F1 EQUAL  &hm F2 N1   &hm F3 N2   &hm F4 N3    &hm F5 N4    &hm F6 N5  &kp CAPSLOCK                                                  &kp UNDER        &hm F7 N6  &hm F8 N7    &hm F9 N8    &hm F10 N9  &hm F11 N0     &hm F12 MINUS
 &kp TAB       &kp Q       &kp W       &kp E        &kp R        &kp T      &kp INS                                                       &hm GRAVE RSHFT  &kp Y      &kp U        &kp I        &kp O       &kp P          &kp BSLH
-&kp ESC       &hm LGUI A  &hm RALT S  &hm LSHFT D  &hm LCTRL F  &kp G      &kp GRAVE     &kp LCTRL   &mo 5         &kp LGUI   &kp RCTRL  &kp DQT          &kp H      &hm RCTRL J  &hm RSHFT K  &hm LALT L  &hm RGUI SEMI  &kp SQT
-&mo 4         &kp Z       &kp X       &kp C        &kp V        &kp B                                &kp HOME      &kp PG_UP                              &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH       &mo 4
-&mo 6         &kp GRAVE   &lb 1 SEMI  &kp LEFT     &kp RIGHT               &kp BSPC      &kp DELETE  &kp END       &kp PG_DN  &kt ENTER  &kp SPACE                   &kp UP       &kp DOWN     &kp LBKT    &kp RBKT       &sk RSHFT
+&kp ESC       &hm LGUI A  &hm RALT S  &hm LSHFT D  &hm LCTRL F  &kp G      &kp GRAVE     &kp LCTRL   &mo 3         &kp LGUI   &kp RCTRL  &kp DQT          &kp H      &hm RCTRL J  &hm RSHFT K  &hm LALT L  &hm RGUI SEMI  &kp SQT
+&mo 2         &kp Z       &kp X       &kp C        &kp V        &kp B                                &kp HOME      &kp PG_UP                              &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH       &mo 2
+&mo 4         &kp GRAVE   &lb 1 SEMI  &kp LEFT     &mo 3                   &kp BSPC      &kp DELETE  &kp END       &kp PG_DN  &kt ENTER  &kp SPACE                   &kp UP       &kp DOWN     &kp LBKT    &kp RBKT       &sk RSHFT
             >;
         };
 
         default_layer {
             display-name = "Base";
             bindings = <
-&tog 0     &kp N1     &kp N2  &kp N3    &kp N4     &kp N5  &kp ESC                                                      &kp UNDER    &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W   &kp E     &kp R      &kp T   &kp INS                                                      &kp TILDE    &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp EQUAL  &kp A      &kp S   &kp D     &kp F      &kp G   &kp GRAVE   &kp LCTRL  &mo 6         &kp LGUI   &kp RCTRL    &kp DQT      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&mo 4      &kp Z      &kp X   &kp C     &kp V      &kp B                          &kp HOME      &kp PG_UP                            &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &mo 4
-&kp LSHFT  &kp GRAVE  &trans  &kp LEFT  &kp RIGHT          &lb 2 BSPC  &lb 5 DEL  &kp END       &kp PG_DN  &lb 5 ENTER  &lb 3 SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp RSHFT
-            >;
-        };
-
-        homerow_left_layer {
-            bindings = <
-&trans  &trans      &trans      &trans       &trans       &trans  &trans                                      &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans      &trans       &trans       &trans  &trans                                      &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &hm LGUI A  &hm RALT S  &hm LSHFT D  &hm LCTRL F  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans      &trans       &trans       &trans                  &trans      &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans      &trans       &trans               &trans  &trans  &trans      &trans  &trans  &kp SPACE          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        homerow_right_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans       &trans       &trans      &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans       &trans       &trans      &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans   &trans      &trans  &trans     &trans  &trans  &hm RCTRL J  &hm RSHFT K  &hm LALT L  &hm RGUI SEMI  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                     &trans      &trans                     &trans  &trans       &trans       &trans      &trans         &trans
-&trans  &trans  &trans  &trans  &trans          &kp BSPC  &kp DEL  &trans      &trans  &kp ENTER  &trans          &trans       &trans       &trans      &trans         &trans
+&tog 0     &kp N1     &kp N2  &kp N3    &kp N4     &kp N5  &kp ESC                                                        &kp UNDER    &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W   &kp E     &kp R      &kp T   &kp INS                                                        &kp TILDE    &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp EQUAL  &kp A      &kp S   &kp D     &kp F      &kp G   &kp GRAVE      &kp LCTRL   &mo 4         &kp LGUI   &kp RCTRL  &kp DQT      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&mo 2      &kp Z      &kp X   &kp C     &kp V      &kp B                              &kp HOME      &kp PG_UP                          &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &mo 2
+&kp LSHFT  &kp GRAVE  &trans  &kp LEFT  &kp RIGHT          &kp BACKSPACE  &kp DELETE  &kp END       &kp PG_DN  &kp ENTER  &lb 0 SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp RSHFT
             >;
         };
 
