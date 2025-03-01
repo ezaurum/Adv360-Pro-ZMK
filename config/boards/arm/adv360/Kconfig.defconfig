@@ -3,6 +3,8 @@
 # SPDX-License-Identifier: MIT
 #
 
+CONFIG_ZMK_POINTING=y
+
 if BOARD_ADV360_LEFT
 
     config ZMK_KEYBOARD_NAME
