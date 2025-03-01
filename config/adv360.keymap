@@ -93,7 +93,7 @@
         mouse_navigation_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &msc SCRL_UP    &mkp LCTRL &mkp RCTRL &msc SCRL_DOWN     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &msc SCRL_UP    &mkp LCLK &mkp RCLK &msc SCRL_DOWN     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans    &trans    &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans  &trans
